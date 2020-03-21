@@ -12,6 +12,10 @@ jobs:
       BASE_SHA: 0318ef7f4bbcfd189b8f752ed872697e52023784
     steps:
     - uses: actions/checkout@v1
+    - name: Install sqlite3
+      run: |
+        sudo apt update
+        sudo apt install -y sqlite3
     - name: Clone destination repository
       run: |
         cd $HOME

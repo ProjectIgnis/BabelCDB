@@ -36,7 +36,7 @@ jobs:
         for DB in $CHANGED; do
           ./ci/sqlite3-git.sh $BASE_SHA $DB
         done
-        rsync -avR *.delta.cdb $HOME/$DESTINATION
+        find . -type f -name '*.delta.cdb' -exec rsync -avR {} $HOME/$DESTINATION \;
     - name: Commit and push with original metadata
       run: |
         MESSAGE=$(git log -1 --pretty=%B)

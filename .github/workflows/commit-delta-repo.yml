@@ -1,0 +1,54 @@
+name: Delta repository generator - SQLite variant
+on:
+  push:
+    branches:
+      - master
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    env:
+      REMOTE: ProjectIgnis/DeltaBeta.git
+      DESTINATION: DeltaBeta
+      BASE_SHA: 0318ef7f4bbcfd189b8f752ed872697e52023784
+    steps:
+    - uses: actions/checkout@v1
+    - name: Clone destination repository
+      run: |
+        cd $HOME
+        git clone https://${{ secrets.DEPLOY_TOKEN }}@github.com/$REMOTE
+        mkdir -p $DESTINATION
+    - name: Copy new CDBs only
+      run: |
+        ADDED=$(git diff --name-only --diff-filter=A $BASE_SHA | grep ".cdb$")
+        if [[ "$ADDED" ]]; then
+          rsync -avR $ADDED $HOME/$DESTINATION
+        fi
+    - name: Remove deleted files
+      run: |
+        REMOVED=$(git diff --name-only --diff-filter=D $BASE_SHA)
+        cd $HOME/$DESTINATION
+        if [[ "$REMOVED" ]]; then
+          git rm -rf --ignore-unmatch $REMOVED
+        fi
+    - name: Generate SQLite deltas
+      run: |
+        CHANGED=$(git diff --name-only --diff-filter=M $BASE_SHA | grep ".cdb$")
+        for DB in $CHANGED; do
+          ./ci/sqlite3-git.sh $BASE_SHA $DB
+        done
+        rsync -avR *.delta.cdb $HOME/$DESTINATION
+    - name: Commit and push with original metadata
+      run: |
+        MESSAGE=$(git log -1 --pretty=%B)
+        AUTHOR=$(git log -1 --pretty=format:'%an')
+        EMAIL=$(git log -1 --pretty=format:'%ae')
+        COMMITTER=$(git log -1 --pretty=format'%cn')
+        CEMAIL=$(git log -1 --pretty=format:'%ce')
+        cd $HOME/$DESTINATION
+        git config user.email "$CEMAIL"
+        git config user.name "$COMMITTER"
+        git add -A .
+        if [[ $(git status --porcelain) ]]; then
+          git commit --author="$AUTHOR <$EMAIL>" -m "$MESSAGE"
+          git push
+        fi

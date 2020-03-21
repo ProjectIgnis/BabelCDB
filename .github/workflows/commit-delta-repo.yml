@@ -19,7 +19,7 @@ jobs:
         mkdir -p $DESTINATION
     - name: Copy new CDBs only
       run: |
-        ADDED=$(git diff --name-only --diff-filter=A $BASE_SHA | grep ".cdb$")
+        ADDED=$(git diff --name-only --diff-filter=A $BASE_SHA | grep ".cdb$" || [[ $? == 1 ]])
         if [[ "$ADDED" ]]; then
           rsync -avR $ADDED $HOME/$DESTINATION
         fi
@@ -32,7 +32,7 @@ jobs:
         fi
     - name: Generate SQLite deltas
       run: |
-        CHANGED=$(git diff --name-only --diff-filter=M $BASE_SHA | grep ".cdb$")
+        CHANGED=$(git diff --name-only --diff-filter=M $BASE_SHA | grep ".cdb$" || [[ $? == 1 ]])
         for DB in $CHANGED; do
           ./ci/sqlite3-git.sh $BASE_SHA $DB
         done

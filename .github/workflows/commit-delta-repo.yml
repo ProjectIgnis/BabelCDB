@@ -24,16 +24,19 @@ jobs:
         mkdir -p $DESTINATION
     - name: Copy new CDBs only
       run: |
-        ADDED=$(git diff --name-only --diff-filter=A $BASE_SHA | grep ".cdb$" || [[ $? == 1 ]])
+        ADDED=$(git diff --name-only --no-renames --diff-filter=A $BASE_SHA | grep ".cdb$" || [[ $? == 1 ]])
         if [[ "$ADDED" ]]; then
           rsync -avR $ADDED $HOME/$DESTINATION
         fi
     - name: Remove deleted files
       run: |
-        REMOVED=$(git diff --name-only --diff-filter=D $BASE_SHA)
-        cd $HOME/$DESTINATION
-        if [[ "$REMOVED" ]]; then
-          git rm -rf --ignore-unmatch $REMOVED
+        if [[ -f $HOME/$DESTINATION/VERSION ]]; then
+          LAST_SHA=$(cat $HOME/$DESTINATION/VERSION)
+          REMOVED=$(git diff --name-only --no-renames --diff-filter=D $LAST_SHA)
+          if [[ "$REMOVED" ]]; then
+            cd $HOME/$DESTINATION
+            git rm -rf --ignore-unmatch $REMOVED
+          fi
         fi
     - name: Generate SQLite deltas
       run: |
@@ -50,6 +53,7 @@ jobs:
         COMMITTER=$(git log -1 --pretty=format'%cn')
         CEMAIL=$(git log -1 --pretty=format:'%ce')
         cd $HOME/$DESTINATION
+        echo $GITHUB_SHA > VERSION
         git config user.email "$CEMAIL"
         git config user.name "$COMMITTER"
         git add -A .

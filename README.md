@@ -19,17 +19,17 @@ These databases are automatically synchronized with servers.
 		* `fixOT.cdb`: for changes in the OTs of the card.
 		* `fixMisc.cdb`: for changes not listed above. Please describe what you have changed.
 
-* New products are not longer called "beta". They are "pre-release". As such, they take a corresponding OT,(hex= 0x100, dec=256).
+* New products are not longer called "beta". They are "pre-release". As such, they take a corresponding OT, (hex= 0x100, dec=256).
 
 * We have replaced the categories used as filter in the "Effect" button in Deck edit for 32 different categories.
 
-* If you use DataeditorX, use this [English file](https://github.com/NaimSantos/DataEditorX/blob/master/DataEditorX/data/cardinfo_english.txt) with the updated archetype names/setcodes, the new OTs and the new categories already mapped 
+* If you use DataeditorX, use this [English file](https://github.com/NaimSantos/DataEditorX/blob/master/DataEditorX/data/cardinfo_english.txt) with the updated archetype names/setcodes, the new OTs and the new categories already mapped.
 
 ## GitHub Actions
 
-- commits new CDBs since the last tag directly to the delta repository
-- computes delta CDBs for CDBs modified since the last tag and commits these to the delta repository
-- deletes files that were deleted here since the last Actions run
+- commits new CDBs since the last tag directly to the delta repository.
+- computes delta CDBs for CDBs modified since the last tag and commits these to the delta repository.
+- deletes files that were deleted here since the last Actions run.
 
 ## Guidelines for passcodes/IDs for new sets:
 

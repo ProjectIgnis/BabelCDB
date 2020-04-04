@@ -11,9 +11,9 @@ These databases are automatically synchronized with servers.
 		* when that set is released, update the cards ID and remove the pre-release OT, then move the cards to `official.cdb`.
 
 * For fixes to existing cards:
-	* if the card is already in a cdb in the [repository the users get udpates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger), edit the entry in the corresponding file here.
+	* if the card is already in a cdb in the [repository the users get udpates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger), edit the entry in the corresponding file here, so it gets commited to them.
 
-	* if the card is not in this repository, add it to one of the following files:
+	* if the card is not in the [repository the users get udpates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger) repository, add it to one of the following files here:
 		* `fixSetcode.cdb`: for changes in the setcodes of the card.
 		* `fixString.cdb`: for changes in the strings used by the card, including card text.
 		* `fixOT.cdb`: for changes in the OTs of the card.

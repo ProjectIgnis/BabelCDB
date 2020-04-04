@@ -2,8 +2,6 @@
 
 These databases are automatically synchronized with servers.
 
-
-
 ## Guidelines for SQLite3 CDB files:
 
 * For new cards:
@@ -11,9 +9,9 @@ These databases are automatically synchronized with servers.
 		* when that set is released, update the cards ID and remove the pre-release OT, then move the cards to `official.cdb`.
 
 * For fixes to existing cards:
-	* if the card is already in a cdb in the [repository the users get udpates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger), edit the entry in the corresponding file here, so it gets commited to them.
+	* if the card is already in a cdb in [the repository the users get updates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger), edit the entry in the corresponding file here, so it gets committed over there.
 
-	* if the card is not in the [repository the users get udpates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger) repository, add it to one of the following files here:
+	* if not, add it to one of the following files here:
 		* `fixSetcode.cdb`: for changes in the setcodes of the card.
 		* `fixString.cdb`: for changes in the strings used by the card, including card text.
 		* `fixOT.cdb`: for changes in the OTs of the card.
@@ -23,13 +21,15 @@ These databases are automatically synchronized with servers.
 
 * We have replaced the categories used as filter in the "Effect" button in Deck edit for 32 different categories.
 
-* If you use DataeditorX, use this [English file](https://github.com/NaimSantos/DataEditorX/blob/master/DataEditorX/data/cardinfo_english.txt) with the updated archetype names/setcodes, the new OTs and the new categories already mapped.
+* If you use DataEditorX, use this [English file](https://github.com/NaimSantos/DataEditorX/blob/master/DataEditorX/data/cardinfo_english.txt) with the updated archetype names/setcodes, the new OTs, and the new categories already mapped.
 
 ## GitHub Actions
 
-- commits new CDBs since the last tag directly to the delta repository.
-- computes delta CDBs for CDBs modified since the last tag and commits these to the delta repository.
-- deletes files that were deleted here since the last Actions run.
+Responsible for pushing database updates to [the repository the users get updates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger)
+- new CDBs since [the last tag](https://github.com/ProjectIgnis/BabelCDB/tree/20200403) are directly committed
+- delta databases are computed for databases already present and committed
+  - a delta database is a database containing only new or changed rows compared to the previous version
+- files that were deleted since the last Actions run are also deleted in the other repository
 
 ## Guidelines for passcodes/IDs for new sets:
 

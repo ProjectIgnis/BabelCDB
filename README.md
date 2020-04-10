@@ -42,3 +42,4 @@ Responsible for pushing database updates to [the repository the users get update
 	* 2020-04-24 - The Valuable Book 22 promotional cards (VB22-JP): 100264000
 	* 2020-05-16 - Duelist Pack: Duelists of Gloom (DP24-JP): 100424000
 	* 2020-06-06 - Collectors Pack 2020 (CP20-JP): 100266000
+	* 2020-06-20 - Structure Deck: Masters of the Spiritual Arts: 100339000

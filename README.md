@@ -9,13 +9,17 @@ These databases are automatically synchronized with servers.
 		* when that set is released, update the cards ID and remove the pre-release OT, then move the cards to `official.cdb`.
 
 * For fixes to existing cards:
-	* if the card is already in a cdb in [the repository the users get updates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger), edit the entry in the corresponding file here, so it gets committed over there.
+	* for official cards:
+		* if the card is already in a cdb in [the repository the users get updates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger), edit the entry in the corresponding file here, so it gets committed over there.
 
-	* if not, add it to one of the following files here:
-		* `fixSetcode.cdb`: for changes in the setcodes of the card.
-		* `fixString.cdb`: for changes in the strings used by the card, including card text.
-		* `fixOT.cdb`: for changes in the OTs of the card.
-		* `fixMisc.cdb`: for changes not listed above. Please describe what you have changed.
+		* if not, add it to one of the following files here:
+			* `fixSetcode.cdb`: for changes in the setcodes of the card.
+			* `fixString.cdb`: for changes in the strings used by the card, including card text.
+			* `fixOT.cdb`: for changes in the OTs of the card.
+			* `fixMisc.cdb`: for changes not listed above. Please describe what you have changed.
+			
+	* for unofficial cards:
+		* same as above, but add `-unofficial` to the file name. Example: `fixMisc-unofficial.cdb`
 
 * New products are not longer called "beta". They are "pre-release". As such, they take a corresponding OT, (hex= 0x100, dec=256).
 

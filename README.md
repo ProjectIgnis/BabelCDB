@@ -1,6 +1,8 @@
 # Project Ignis card databases for EDOPro
 
-These databases are automatically synchronized with servers.
+These databases are automatically synchronized with servers. Please keep all bug reports and questions on Discord; do NOT open an issue or pull request. External contributions are not allowed here.
+
+If you are submitting a database for a new unofficial addition, please submit a single new database to [Larry's fork](https://github.com/larry126/BabelCDB), where they will eventually be combined and merged back upstream. To submit such a pull request, first follow the contributing guidelines for the [script collection](https://github.com/ProjectIgnis/CardScripts). The pull request title should be the same, and the description should simply link to the pull request to the script collection.
 
 ## Guidelines for SQLite3 CDB files:
 
@@ -17,7 +19,7 @@ These databases are automatically synchronized with servers.
 			* `fixString.cdb`: for changes in the strings used by the card, including card text.
 			* `fixOT.cdb`: for changes in the OTs of the card.
 			* `fixMisc.cdb`: for changes not listed above. Please describe what you have changed.
-			
+
 	* for unofficial cards:
 		* same as above, but add `-unofficial` to the file name. Example: `fixMisc-unofficial.cdb`
 
@@ -34,6 +36,7 @@ Responsible for pushing database updates to [the repository the users get update
 - delta databases are computed for databases already present and committed
   - a delta database is a database containing only new or changed rows compared to the previous version
 - files that were deleted since the last Actions run are also deleted in the other repository
+- if a pushed HEAD commit title contains `[ci skip]`, `[skip ci]`, `[actions skip]`, or `[skip actions]`, this is skipped.
 
 ## Guidelines for passcodes/IDs for new sets:
 

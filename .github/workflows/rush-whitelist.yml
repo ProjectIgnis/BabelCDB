@@ -1,0 +1,51 @@
+name: Rush Duel whitelist generator
+on:
+  push:
+    branches:
+      - master
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    if: >-
+      !(
+        contains(github.event.head_commit.message, '[ci skip]') ||
+        contains(github.event.head_commit.message, '[skip ci]') ||
+        contains(github.event.head_commit.message, '[actions skip]') ||
+        contains(github.event.head_commit.message, '[skip actions]')
+      )
+    env:
+      REMOTE: ProjectIgnis/LFLists.git
+      DESTINATION: LFLists
+      OUTPUT_OFFICIAL: Rush
+      DATE_OFFICIAL: 2020.04.27
+      OUTPUT_PRERELEASE: Rush-Prerelease
+      DATE_PRERELEASE: 2020.05.24
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install sqlite3
+      run: |
+        sudo apt update
+        sudo apt install -y sqlite3
+    - name: Clone destination repository
+      run: |
+        cd $HOME
+        git clone https://${{ secrets.DEPLOY_TOKEN }}@github.com/$REMOTE $DESTINATION
+    - name: Compute whitelists
+      run: |
+        ./ci/rush-whitelist.sh $HOME/$DESTINATION/$OUTPUT_OFFICIAL $DATE_OFFICIAL \
+          $HOME/$DESTINATION/$OUTPUT_PRERELEASE $DATE_PRERELEASE
+    - name: Commit and push with original metadata
+      run: |
+        MESSAGE=$(git log -1 --pretty=%B)
+        AUTHOR=$(git log -1 --pretty=format:'%an')
+        EMAIL=$(git log -1 --pretty=format:'%ae')
+        COMMITTER=$(git log -1 --pretty=format'%cn')
+        CEMAIL=$(git log -1 --pretty=format:'%ce')
+        cd $HOME/$DESTINATION
+        git config user.email "$CEMAIL"
+        git config user.name "$COMMITTER"
+        git add -A .
+        if [[ $(git status --porcelain) ]]; then
+          git commit --author="$AUTHOR <$EMAIL>" -m "Rush whitelist: $MESSAGE" -m "$GITHUB_REPOSITORY@$GITHUB_SHA"
+          git push
+        fi

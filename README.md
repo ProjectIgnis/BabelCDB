@@ -4,7 +4,7 @@ These databases are automatically synchronized with servers. Please keep all bug
 
 If you are submitting a database for a new unofficial addition, please submit a single new database to [Larry's fork](https://github.com/larry126/BabelCDB), where they will eventually be combined and merged back upstream. To submit such a pull request, first follow the contributing guidelines for the [script collection](https://github.com/ProjectIgnis/CardScripts). The pull request title should be the same, and the description should simply link to the pull request to the script collection.
 
-## Guidelines for SQLite3 CDB files:
+## Guidelines for SQLite3 CDB files
 
 * For new cards:
 	* for each new set, add a `preRelease` cdb with its name
@@ -38,15 +38,45 @@ Responsible for pushing database updates to [the repository the users get update
 - files that were deleted since the last Actions run are also deleted in the other repository
 - if a pushed HEAD commit title contains `[ci skip]`, `[skip ci]`, `[actions skip]`, or `[skip actions]`, this is skipped.
 
-## Guidelines for passcodes/IDs for new sets:
+## Guidelines for passcodes
 
-* Cards from new products receive a nine-digit passcode, until they are offially released, when the official passcode is used. See list below.
-	* 2020-04-04 - Starter Deck Yuga - Cut Through! Sevens Road!! (RD/ST01-JP): 160301000
-	* 2020-04-04 - Starter Deck Luke - Explosive Supremacy! Dragears!! (RD/ST02-JP): 160302000
-	* 2020-04-04 - Starter Deck Set - Yuga vs. Luke (RD/VS01-JP): 160401000
-	* 2020-04-11 - Deck Modification Pack - Hyperspeed Rush Road!! (RD/KP01-JP): 160001000
-	* 2020-04-18 - Rise of the Duelist (ROTD-JP): 101101000
-	* 2020-04-24 - The Valuable Book 22 promotional cards (VB22-JP): 100264000
-	* 2020-05-16 - Duelist Pack: Duelists of Gloom (DP24-JP): 100424000
-	* 2020-06-06 - Collectors Pack 2020 (CP20-JP): 100266000
-	* 2020-06-20 - Structure Deck: Masters of the Spiritual Arts (SD39-JP): 100339000
+Announced OCG/TCG cards receive a nine-digit prerelease passcode until they are
+released as official product, when the official passcode is used. Speed Duel has
+[its own policy](https://github.com/ProjectIgnis/CardScripts/wiki/Skill-Documentation#cdb-handling)
+with the 300XXXYYY range and Rush Duel has its own policy in the 160XXXYYY range.
+
+Unofficial cards fall under numerous ranges due to historical reasons but are
+slowly being reworked and reorganized to the 511XXXYYY range.
+
+Cards with passcodes aliased to a passcode within 10 are treated as alternate
+artworks.
+
+### Upcoming sets
+`XXX` is the card index within its set.
+Release date | Set | Prefix | Prerelease passcode range
+--- | --- | --- | ---
+2020-04-04 | Starter Deck Yuga - Cut Through! Sevens Road!! | RD/ST01-JP | 160301XXX
+2020-04-04 | Starter Deck Luke - Explosive Supremacy! Dragears!! | RD/ST02-JP | 160302XXX
+2020-04-04 | Starter Deck Set - Yuga vs. Luke | RD/VS01-JP | 160401XXX
+2020-04-11 | Deck Modification Pack - Hyperspeed Rush Road!! | RD/KP01-JP | 160001XXX
+2020-04-18 | Rise of the Duelist | ROTD-JP | 101101XXX
+2020-04-24 | The Valuable Book 22 promotional cards | VB22-JP | 100264XXX
+2020-05-30 | Duelist Pack: Duelists of Gloom | DP24-JP | 100424XXX
+2020-06-18 | Toon Chaos | TOCH-EN | 100268XXX
+2020-06-20 | Collection Pack 2020 | CP20-JP | 100266XXX
+2020-07-04 | Structure Deck: Masters of the Spiritual Arts | SD39-JP | 100339XXX
+2020-07-24 | Battles of Legend: Armageddon | BLAR-EN |
+2020-08-?? | Prismatic Special Pack | VP20-JP | 100267XXX
+2020-08-08 | Phantom Rage | ????-JP | 101102XXX
+2020-08-27 | Tin of Lost Memories | ????-EN | 100268XXX
+2020-08-29 | Structure Deck R: Dragunity Drive | 100340XXX
+2020-09-12 | Deck Build Pack: Genesis Impactors | 100269XXX
+2020-09-19 | Character Pack - Gakuto/Roa/Romin | RD/????-JP | 160003XXX
+2020-09-21 | V Jump Fall 2020 subscription bonus | VJMP-JP1?? | 100200XXX
+2020-10-03 | World Premiere Pack 2020 | 100270XXX
+
+### Rush Duel passcodes
+Format: 160XYYZZZ
+- `X` product type (0 - booster, 1 - starter, 2 - promo)
+- `YY` increment by one for each chronological set of that product type
+- `ZZZ` card index within its set

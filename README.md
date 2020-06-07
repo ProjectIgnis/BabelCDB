@@ -67,7 +67,7 @@ Cards with passcodes aliased to a passcode within 10 are treated as alternate
 artworks.
 
 ### Upcoming sets
-Release date | Set | Prefix | Prerelease passcode range
+Release date | Set | Prefix | Prerelease passcode
 --- | --- | --- | ---
 2020-04-04 | [Starter Deck Yuga - Cut Through! Sevens Road!!][RD/ST01-JP]      | RD/ST01-JP | 160301XXX
 2020-04-04 | [Starter Deck Luke - Explosive Supremacy! Dragears!!][RD/ST02-JP] | RD/ST02-JP | 160302XXX

@@ -34,7 +34,7 @@ If you are submitting a database for a new unofficial addition, please submit a 
 Responsible for pushing database updates to [the repository the users get updates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger)
 - new CDBs since [the last tag](https://github.com/ProjectIgnis/BabelCDB/tree/20200403) are directly committed
 - delta databases are computed for databases already present and committed
-  - a delta database is a database containing only new or changed rows compared to the previous version
+	- a delta database is a database containing only new or changed rows compared to the previous version
 - files that were deleted since the last Actions run are also deleted in the other repository
 - if a pushed HEAD commit title contains `[ci skip]`, `[skip ci]`, `[actions skip]`, or `[skip actions]`, this is skipped.
 
@@ -43,16 +43,30 @@ Responsible for pushing database updates to [the repository the users get update
 Announced OCG/TCG cards receive a nine-digit prerelease passcode until they are
 released as official product, when the official passcode is used. Speed Duel has
 [its own policy](https://github.com/ProjectIgnis/CardScripts/wiki/Skill-Documentation#cdb-handling)
-with the 300XXXYYY range and Rush Duel has its own policy in the 160XXXYYY range.
+with the `30ZYYYXXX` range and Rush Duel has its own policy in the `160ZYYXXX` range.
+
+- `XXX` is the card index within its set
+- `Y` or `YY` is the set index, incremented by one for each chronological set of that product type
+- Main set: `10ZZYYXXX`
+	- Series `ZZ`: currently 11
+- Side set: `1002YYXXX`
+	- All VJMP-JP (V Jump) promos are considered part of set 200
+	- All WJMP-JP (Weekly Shounen Jump) promos are considered part of set 203
+	- All SJMP-JP (Saikyou Jump) promos are considered part of set 204
+- Structure Deck R: `10030YXXX`
+- Starter Deck: `10031YXXX`
+- Structure Deck (other): `10033YXXX`
+- Deck Build Pack and Duelist Pack: `1004YYXXX`
+- Rush Duel sets: `160ZYYXXX`
+	- `Z` product type (0 - booster, 1 - starter, 2 - promo)
 
 Unofficial cards fall under numerous ranges due to historical reasons but are
-slowly being reworked and reorganized to the 511XXXYYY range.
+slowly being reworked and reorganized to the `511YYYXXX` range.
 
 Cards with passcodes aliased to a passcode within 10 are treated as alternate
 artworks.
 
 ### Upcoming sets
-`XXX` is the card index within its set.
 Release date | Set | Prefix | Prerelease passcode range
 --- | --- | --- | ---
 2020-04-04 | Starter Deck Yuga - Cut Through! Sevens Road!! | RD/ST01-JP | 160301XXX
@@ -67,16 +81,10 @@ Release date | Set | Prefix | Prerelease passcode range
 2020-07-04 | Structure Deck: Masters of the Spiritual Arts | SD39-JP | 100339XXX
 2020-07-24 | Battles of Legend: Armageddon | BLAR-EN |
 2020-08-?? | Prismatic Special Pack | VP20-JP | 100267XXX
-2020-08-08 | Phantom Rage | ????-JP | 101102XXX
+2020-08-08 | Phantom Rage | ????-JP | | 101102XXX
 2020-08-27 | Tin of Lost Memories | ????-EN | 100268XXX
-2020-08-29 | Structure Deck R: Dragunity Drive | 100340XXX
-2020-09-12 | Deck Build Pack: Genesis Impactors | 100269XXX
+2020-08-29 | Structure Deck R: Dragunity Drive | SR11-JP | 100340XXX
+2020-09-12 | Deck Build Pack: Genesis Impactors | | 100269XXX
 2020-09-19 | Character Pack - Gakuto/Roa/Romin | RD/????-JP | 160003XXX
 2020-09-21 | V Jump Fall 2020 subscription bonus | VJMP-JP1?? | 100200XXX
-2020-10-03 | World Premiere Pack 2020 | 100270XXX
-
-### Rush Duel passcodes
-Format: 160XYYZZZ
-- `X` product type (0 - booster, 1 - starter, 2 - promo)
-- `YY` increment by one for each chronological set of that product type
-- `ZZZ` card index within its set
+2020-10-03 | World Premiere Pack 2020 | | 100270XXX

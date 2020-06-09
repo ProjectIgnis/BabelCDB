@@ -80,14 +80,14 @@ Release date | Set | Prefix | Prerelease passcode
 2020-06-20 | [Collection Pack 2020][CP20-JP]                                   | CP20-JP | 100266XXX
 2020-07-04 | [Structure Deck: Masters of the Spiritual Arts][SD39-JP]          | SD39-JP | 100339XXX
 2020-07-24 | [Battles of Legend: Armageddon][BLAR-EN]                          | BLAR-EN |
-2020-08-?? | [Prismatic Special Pack][VP20-JP]                                  | VP20-JP | 100267XXX
-2020-08-08 | [Phantom Rage][PHRA]                                              | ????-JP | | 101102XXX
+2020-08-?? | [Prismatic Special Pack][VP20-JP]                                 | VP20-JP | 100267XXX
+2020-08-08 | [Phantom Rage][PHRA-JP]                                           | PHRA-JP | | 101102XXX
 2020-08-27 | [Tin of Lost Memories][LOME]                                      | ????-EN | 100268XXX
 2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100340XXX
-2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI]                        | | 100269XXX
+2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI]                        | | 100425XXX
 2020-09-19 | [Character Pack - Gakuto/Roa/Romin][CPGR]                         | RD/????-JP | 160003XXX
-2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                     | VJMP-JP1?? | 100200XXX
-2020-10-03 | [World Premiere Pack 2020][WP2020]                                | | 100270XXX
+2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1?? | 100200XXX
+2020-10-03 | [World Premiere Pack 2020][WP2020]                                | | 100269XXX
 
 [RD/ST01-JP]: https://yugipedia.com/wiki/Starter_Deck_Yuga_-_Cut_Through!_Sevens_Road!!
 [RD/ST02-JP]: https://yugipedia.com/wiki/Starter_Deck_Rook_-_Explosive_Supremacy!_Dragears!!
@@ -101,7 +101,7 @@ Release date | Set | Prefix | Prerelease passcode
 [SD39-JP]: https://yugipedia.com/wiki/Structure_Deck:_Masters_of_the_Spiritual_Arts
 [BLAR-EN]: https://yugipedia.com/wiki/Battles_of_Legend:_Armageddon
 [VP20-JP]: https://yugipedia.com/wiki/Prismatic_Special_Pack
-[PHRA]: https://yugipedia.com/wiki/Phantom_Rage
+[PHRA-JP]: https://yugipedia.com/wiki/Phantom_Rage
 [LOME]: https://yugipedia.com/wiki/Tin_of_Lost_Memories
 [SR11-JP]: https://yugipedia.com/wiki/Structure_Deck_R:_Dragunity_Drive
 [DBGI]: https://yugipedia.com/wiki/Deck_Build_Pack:_Genesis_Impactors

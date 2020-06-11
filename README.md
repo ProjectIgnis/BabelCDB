@@ -54,7 +54,7 @@ with the `30ZYYYXXX` range and Rush Duel has its own policy in the `160ZYYXXX` r
 	- All VJMP-JP (V Jump) promos are considered part of set 200
 	- All WJMP-JP (Weekly Shounen Jump) promos are considered part of set 203
 	- All SJMP-JP (Saikyou Jump) promos are considered part of set 204
-- Structure Deck R: `1003YYXXX`
+- Structure Deck and Starter Deck: `1003YYXXX`
 - Deck Build Pack and Duelist Pack: `1004YYXXX`
 - Rush Duel sets: `160ZYYXXX`
 	- `Z` product type (0 - booster, 1 - starter, 2 - promo)

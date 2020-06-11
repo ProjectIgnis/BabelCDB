@@ -47,15 +47,14 @@ with the `30ZYYYXXX` range and Rush Duel has its own policy in the `160ZYYXXX` r
 
 - `XXX` is the card index within its set
 - `Y` or `YY` is the set index, incremented by one for each chronological set of that product type
+	- For Structure Decks, `YY` comes from the set code, e.g. SD38, ST18, SR10
 - Main set: `10ZZYYXXX`
 	- Series `ZZ`: currently 11
 - Side set: `1002YYXXX`
 	- All VJMP-JP (V Jump) promos are considered part of set 200
 	- All WJMP-JP (Weekly Shounen Jump) promos are considered part of set 203
 	- All SJMP-JP (Saikyou Jump) promos are considered part of set 204
-- Structure Deck R: `10030YXXX`
-- Starter Deck: `10031YXXX`
-- Structure Deck (other): `10033YXXX`
+- Structure Deck R: `1003YYXXX`
 - Deck Build Pack and Duelist Pack: `1004YYXXX`
 - Rush Duel sets: `160ZYYXXX`
 	- `Z` product type (0 - booster, 1 - starter, 2 - promo)
@@ -83,7 +82,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-08-?? | [Prismatic Special Pack][VP20-JP]                                 | VP20-JP | 100267XXX
 2020-08-08 | [Phantom Rage][PHRA-JP]                                           | PHRA-JP | | 101102XXX
 2020-08-27 | [Tin of Lost Memories][LOME]                                      | ????-EN | 100268XXX
-2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100340XXX
+2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100311XXX
 2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI]                        | | 100425XXX
 2020-09-19 | [Character Pack - Gakuto/Roa/Romin][CPGR]                         | RD/????-JP | 160003XXX
 2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1?? | 100200XXX

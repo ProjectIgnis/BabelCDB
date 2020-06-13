@@ -79,6 +79,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-06-20 | [Collection Pack 2020][CP20-JP]                                   | CP20-JP | 100266XXX
 2020-07-04 | [Structure Deck: Masters of the Spiritual Arts][SD39-JP]          | SD39-JP | 100339XXX
 2020-07-24 | [Battles of Legend: Armageddon][BLAR-EN]                          | BLAR-EN |
+2020-08-01 | [Deck Modification Pack - Shocking Lightning Attack!!][RD/KP02-JP]| RD/KP02-JP | 160002XXX
 2020-08-?? | [Prismatic Special Pack][VP20-JP]                                 | VP20-JP | 100267XXX
 2020-08-08 | [Phantom Rage][PHRA-JP]                                           | PHRA-JP | | 101102XXX
 2020-08-27 | [Tin of Lost Memories][LOME]                                      | ????-EN | 100268XXX
@@ -99,6 +100,7 @@ Release date | Set | Prefix | Prerelease passcode
 [CP20-JP]: https://yugipedia.com/wiki/Collection_Pack_2020
 [SD39-JP]: https://yugipedia.com/wiki/Structure_Deck:_Masters_of_the_Spiritual_Arts
 [BLAR-EN]: https://yugipedia.com/wiki/Battles_of_Legend:_Armageddon
+[RD/KP02-JP]: https://yugipedia.com/wiki/Deck_Modification_Pack_-_Shocking_Lightning_Attack!!
 [VP20-JP]: https://yugipedia.com/wiki/Prismatic_Special_Pack
 [PHRA-JP]: https://yugipedia.com/wiki/Phantom_Rage
 [LOME]: https://yugipedia.com/wiki/Tin_of_Lost_Memories

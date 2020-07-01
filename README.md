@@ -48,6 +48,7 @@ with the `30ZYYYXXX` range and Rush Duel has its own policy in the `160ZYYXXX` r
 - `XXX` is the card index within its set
 - `Y` or `YY` is the set index, incremented by one for each chronological set of that product type
 	- For Structure Decks, `YY` comes from the set code, e.g. SD38, ST18, SR10
+	- For Structure Deck Enhancement Packs, they share a `YY` with the Deck and add 50 to `XXX`
 - Main set: `10ZZYYXXX`
 	- Series `ZZ`: currently 11
 - Side set: `1002YYXXX`
@@ -78,6 +79,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-06-18 | [Toon Chaos][TOCH-EN]                                             | TOCH-EN | 100268XXX
 2020-06-20 | [Collection Pack 2020][CP20-JP]                                   | CP20-JP | 100266XXX
 2020-07-04 | [Structure Deck: Masters of the Spiritual Arts][SD39-JP]          | SD39-JP | 100339XXX
+2020-07-04 | [Structure Deck: Masters of the Spiritual Arts][SD39-JP]          | SD39-JPP| 10033905X
 2020-07-24 | [Battles of Legend: Armageddon][BLAR-EN]                          | BLAR-EN |
 2020-08-01 | [Deck Modification Pack - Shocking Lightning Attack!!][RD/KP02-JP]| RD/KP02-JP | 160002XXX
 2020-08-?? | [Prismatic Special Pack][VP20-JP]                                 | VP20-JP | 100267XXX

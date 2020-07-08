@@ -83,7 +83,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-07-24 | [Battles of Legend: Armageddon][BLAR-EN]                          | BLAR-EN |
 2020-08-01 | [Deck Modification Pack - Shocking Lightning Attack!!][RD/KP02-JP]| RD/KP02-JP | 160002XXX
 2020-08-?? | [Prismatic Special Pack][VP20-JP]                                 | VP20-JP | 100267XXX
-2020-08-08 | [Phantom Rage][PHRA-JP]                                           | PHRA-JP | | 101102XXX
+2020-08-08 | [Phantom Rage][PHRA-JP]                                           | PHRA-JP | 101102XXX
 2020-08-27 | [Tin of Lost Memories][LOME]                                      | ????-EN | 100268XXX
 2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100311XXX
 2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI]                        | | 100425XXX

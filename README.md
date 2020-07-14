@@ -67,6 +67,7 @@ Cards with passcodes aliased to a passcode within 10 are treated as alternate
 artworks.
 
 ### Upcoming sets
+
 Release date | Set | Prefix | Prerelease passcode
 --- | --- | --- | ---
 2020-04-04 | [Starter Deck Yuga - Cut Through! Sevens Road!!][RD/ST01-JP]      | RD/ST01-JP | 160301XXX
@@ -86,10 +87,14 @@ Release date | Set | Prefix | Prerelease passcode
 2020-08-08 | [Phantom Rage][PHRA-JP]                                           | PHRA-JP | 101102XXX
 2020-08-27 | [Tin of Lost Memories][LOME]                                      | ????-EN | 100268XXX
 2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100311XXX
-2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI]                        | | 100425XXX
+2020-09-04 | [_OCG Structures_ Volume 2 promotional card][YO01-JP]             | YO01-JP | 100269XXX
+2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI-JP]                     | DBGI-JP | 100425XXX
 2020-09-19 | [Character Pack - Gakuto/Roa/Romin][CPGR]                         | RD/????-JP | 160003XXX
 2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1?? | 100200XXX
-2020-10-03 | [World Premiere Pack 2020][WP2020]                                | | 100269XXX
+2020-10-03 | [World Premiere Pack 2020][WP2020]                                | | 100270XXX
+2020-10-28 | [_SEVENS Duel-1 Blu-ray_ & DVD promotional card][RD/BD01-JP]      | RD/BD01-JP | 160200XXX
+2020-10-31 | [Blazing Vortex][BLVO]                                            | ????-JP | 101103XXX
+2020-11-20 | [Speed Duel Box][SPDB]                                            | ????-EN | 100271XXX
 
 [RD/ST01-JP]: https://yugipedia.com/wiki/Starter_Deck_Yuga_-_Cut_Through!_Sevens_Road!!
 [RD/ST02-JP]: https://yugipedia.com/wiki/Starter_Deck_Rook_-_Explosive_Supremacy!_Dragears!!
@@ -107,7 +112,11 @@ Release date | Set | Prefix | Prerelease passcode
 [PHRA-JP]: https://yugipedia.com/wiki/Phantom_Rage
 [LOME]: https://yugipedia.com/wiki/Tin_of_Lost_Memories
 [SR11-JP]: https://yugipedia.com/wiki/Structure_Deck_R:_Dragunity_Drive
-[DBGI]: https://yugipedia.com/wiki/Deck_Build_Pack:_Genesis_Impactors
+[YO01-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_OCG_Structures_Volume_2_promotional_card
+[DBGI-JP]: https://yugipedia.com/wiki/Deck_Build_Pack:_Genesis_Impactors
 [CPGR]: https://yugipedia.com/wiki/Character_Pack_-_Gakuto/Roa/Romin
 [VJMP9]: https://yugipedia.com/wiki/V_Jump_Fall_2020_subscription_bonus
 [WP2020]: https://yugipedia.com/wiki/World_Premiere_Pack_2020
+[RD/BD01-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_SEVENS_Duel-1_Blu-ray_%26_DVD_promotional_card
+[BLVO]: https://yugipedia.com/wiki/Blazing_Vortex
+[SPDB]: https://yugipedia.com/wiki/Speed_Duel_Box

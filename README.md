@@ -88,7 +88,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-08-27 | [Tin of Lost Memories][LOME]                                      | ????-EN | 100268XXX
 2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100311XXX
 2020-09-04 | [_OCG Structures_ Volume 2 promotional card][YO01-JP]             | YO01-JP | 100269XXX
-2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI-JP]                     | DBGI-JP | 100425XXX
+2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI-JP]                     | DBGI-JP | 100415XXX
 2020-09-19 | [Character Pack - Gakuto/Roa/Romin][CPGR]                         | RD/????-JP | 160003XXX
 2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1?? | 100200XXX
 2020-10-03 | [World Premiere Pack 2020][WP2020]                                | | 100270XXX

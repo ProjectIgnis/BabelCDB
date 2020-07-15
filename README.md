@@ -89,7 +89,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100311XXX
 2020-09-04 | [_OCG Structures_ Volume 2 promotional card][YO01-JP]             | YO01-JP | 100269XXX
 2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI-JP]                     | DBGI-JP | 100415XXX
-2020-09-19 | [Character Pack - Gakuto/Roa/Romin][CPGR]                         | RD/????-JP | 160003XXX
+2020-09-19 | [Character Pack - Gakuto/Roa/Romin][RD/CP01-JP]                   | RD/CP01-JP | 160003XXX
 2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1?? | 100200XXX
 2020-10-03 | [World Premiere Pack 2020][WP2020]                                | | 100270XXX
 2020-10-28 | [_SEVENS Duel-1 Blu-ray_ & DVD promotional card][RD/BD01-JP]      | RD/BD01-JP | 160200XXX
@@ -114,7 +114,7 @@ Release date | Set | Prefix | Prerelease passcode
 [SR11-JP]: https://yugipedia.com/wiki/Structure_Deck_R:_Dragunity_Drive
 [YO01-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_OCG_Structures_Volume_2_promotional_card
 [DBGI-JP]: https://yugipedia.com/wiki/Deck_Build_Pack:_Genesis_Impactors
-[CPGR]: https://yugipedia.com/wiki/Character_Pack_-_Gakuto/Roa/Romin
+[RD/CP01-JP]: https://yugipedia.com/wiki/Character_Pack_-_Gakuto/Roa/Romin
 [VJMP9]: https://yugipedia.com/wiki/V_Jump_Fall_2020_subscription_bonus
 [WP2020]: https://yugipedia.com/wiki/World_Premiere_Pack_2020
 [RD/BD01-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_SEVENS_Duel-1_Blu-ray_%26_DVD_promotional_card

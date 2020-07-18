@@ -47,8 +47,11 @@ with the `30ZYYYXXX` range and Rush Duel has its own policy in the `160ZYYXXX` r
 
 - `XXX` is the card index within its set
 - `Y` or `YY` is the set index, incremented by one for each chronological set of that product type
-	- For Structure Decks, `YY` comes from the set code, e.g. SD38, ST18, SR10
-	- For Structure Deck Enhancement Packs, they share a `YY` with the Deck and add 50 to `XXX`
+	- For Structure Decks, `YY` comes from the prefix, e.g. SD38, ST18, SR10
+	- For Structure Deck Enhancement Packs, they share `YY` with the Deck and add 50 to `XXX`
+	- For Deck Build Packs, `YY` counts up from the previous one
+	- For Duelist Packs, `YY` comes the prefix
+	- TODO: there is potential overlap with this above scheme, to be eventually reworked
 - Main set: `10ZZYYXXX`
 	- Series `ZZ`: currently 11
 - Side set: `1002YYXXX`
@@ -58,7 +61,11 @@ with the `30ZYYYXXX` range and Rush Duel has its own policy in the `160ZYYXXX` r
 - Structure Deck and Starter Deck: `1003YYXXX`
 - Deck Build Pack and Duelist Pack: `1004YYXXX`
 - Rush Duel sets: `160ZYYXXX`
-	- `Z` product type (0 - booster, 1 - starter, 2 - promo)
+	- `Z` product type
+	- 0: KP Deck Modification Pack "main booster"
+	- 2: CP Character Pack "side booster"
+	- 3: ST Starter Deck
+	- 4: Promos
 
 Unofficial cards fall under numerous ranges due to historical reasons but are
 slowly being reworked and reorganized to the `511YYYXXX` range.
@@ -89,10 +96,10 @@ Release date | Set | Prefix | Prerelease passcode
 2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100311XXX
 2020-09-04 | [_OCG Structures_ Volume 2 promotional card][YO01-JP]             | YO01-JP | 100269XXX
 2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI-JP]                     | DBGI-JP | 100415XXX
-2020-09-19 | [Character Pack - Gakuto/Roa/Romin][RD/CP01-JP]                   | RD/CP01-JP | 160003XXX
-2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1?? | 100200XXX
+2020-09-19 | [Character Pack - Gakuto/Roa/Romin][RD/CP01-JP]                   | RD/CP01-JP | 160201XXX
+2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1XX | 100200XXX
 2020-10-03 | [World Premiere Pack 2020][WP2020]                                | | 100270XXX
-2020-10-28 | [_SEVENS Duel-1 Blu-ray_ & DVD promotional card][RD/BD01-JP]      | RD/BD01-JP | 160200XXX
+2020-10-28 | [_SEVENS Duel-1 Blu-ray_ & DVD promotional card][RD/BD01-JP]      | RD/BD01-JP | 160402XXX
 2020-10-31 | [Blazing Vortex][BLVO]                                            | ????-JP | 101103XXX
 2020-11-20 | [Speed Duel Box][SPDB]                                            | ????-EN | 100271XXX
 

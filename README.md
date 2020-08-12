@@ -88,20 +88,21 @@ Release date | Set | Prefix | Prerelease passcode
 2020-06-20 | [Collection Pack 2020][CP20-JP]                                   | CP20-JP | 100266XXX
 2020-07-04 | [Structure Deck: Masters of the Spiritual Arts][SD39-JP]          | SD39-JP | 100339XXX
 2020-07-04 | [Structure Deck: Masters of the Spiritual Arts][SD39-JP]          | SD39-JPP| 10033905X
-2020-07-24 | [Battles of Legend: Armageddon][BLAR-EN]                          | BLAR-EN |
+2020-07-30 | [Prismatic Special Pack][VP20-JP]                                 | VP20-JP | 100267XXX
 2020-08-01 | [Deck Modification Pack - Shocking Lightning Attack!!][RD/KP02-JP]| RD/KP02-JP | 160002XXX
-2020-08-?? | [Prismatic Special Pack][VP20-JP]                                 | VP20-JP | 100267XXX
 2020-08-08 | [Phantom Rage][PHRA-JP]                                           | PHRA-JP | 101102XXX
 2020-08-27 | [Tin of Lost Memories][LOME]                                      | ????-EN | 100268XXX
 2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100311XXX
-2020-09-04 | [_OCG Structures_ Volume 2 promotional card][YO01-JP]             | YO01-JP | 100269XXX
+2020-09-04 | [_OCG Structures_ Volume 2 promotional card][YO02-JP]             | YO01-JP | 100269XXX
 2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI-JP]                     | DBGI-JP | 100415XXX
 2020-09-19 | [Character Pack - Gakuto/Roa/Romin][RD/CP01-JP]                   | RD/CP01-JP | 160201XXX
 2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1XX | 100200XXX
-2020-10-03 | [World Premiere Pack 2020][WP2020]                                | | 100270XXX
+2020-10-03 | [World Premiere Pack 2020][WPP1-JP]                               | WPP1-JP | 100270XXX
 2020-10-28 | [_SEVENS Duel-1 Blu-ray_ & DVD promotional card][RD/BD01-JP]      | RD/BD01-JP | 160402XXX
 2020-10-31 | [Blazing Vortex][BLVO]                                            | ????-JP | 101103XXX
-2020-11-20 | [Speed Duel Box][SPDB]                                            | ????-EN | 100271XXX
+2020-11-14 | [Deck Modification Pack - Fantastrike Mirage Impact!!][RD/KP03-JP]| RD/KP03-JP | 160003XXX
+2020-11-20 | [Speed Duel Battle City Box][SPDB]                                | ????-EN | 100271XXX
+2020-11-21 | [Structure Deck: Ice Barrier of the Frozen Prison][SD40-JP]       | SD40-JP | 100340XXX
 
 [RD/ST01-JP]: https://yugipedia.com/wiki/Starter_Deck_Yuga_-_Cut_Through!_Sevens_Road!!
 [RD/ST02-JP]: https://yugipedia.com/wiki/Starter_Deck_Rook_-_Explosive_Supremacy!_Dragears!!
@@ -113,17 +114,18 @@ Release date | Set | Prefix | Prerelease passcode
 [TOCH-EN]: https://yugipedia.com/wiki/Toon_Chaos
 [CP20-JP]: https://yugipedia.com/wiki/Collection_Pack_2020
 [SD39-JP]: https://yugipedia.com/wiki/Structure_Deck:_Masters_of_the_Spiritual_Arts
-[BLAR-EN]: https://yugipedia.com/wiki/Battles_of_Legend:_Armageddon
 [RD/KP02-JP]: https://yugipedia.com/wiki/Deck_Modification_Pack_-_Shocking_Lightning_Attack!!
 [VP20-JP]: https://yugipedia.com/wiki/Prismatic_Special_Pack
 [PHRA-JP]: https://yugipedia.com/wiki/Phantom_Rage
 [LOME]: https://yugipedia.com/wiki/Tin_of_Lost_Memories
 [SR11-JP]: https://yugipedia.com/wiki/Structure_Deck_R:_Dragunity_Drive
-[YO01-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_OCG_Structures_Volume_2_promotional_card
+[YO02-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_OCG_Structures_Volume_2_promotional_card
 [DBGI-JP]: https://yugipedia.com/wiki/Deck_Build_Pack:_Genesis_Impactors
 [RD/CP01-JP]: https://yugipedia.com/wiki/Character_Pack_-_Gakuto/Roa/Romin
 [VJMP9]: https://yugipedia.com/wiki/V_Jump_Fall_2020_subscription_bonus
-[WP2020]: https://yugipedia.com/wiki/World_Premiere_Pack_2020
+[WPP1-JP]: https://yugipedia.com/wiki/World_Premiere_Pack_2020
 [RD/BD01-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_SEVENS_Duel-1_Blu-ray_%26_DVD_promotional_card
 [BLVO]: https://yugipedia.com/wiki/Blazing_Vortex
+[RD/KP03-JP]: https://yugipedia.com/wiki/Deck_Modification_Pack_-_Fantastrike_Mirage_Impact!!
 [SPDB]: https://yugipedia.com/wiki/Speed_Duel_Box
+[SD40-JP]: https://yugipedia.com/wiki/Structure_Deck:_Ice_Barrier_of_the_Frozen_Prison

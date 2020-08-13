@@ -91,7 +91,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-07-30 | [Prismatic Special Pack][VP20-JP]                                 | VP20-JP | 100267XXX
 2020-08-01 | [Deck Modification Pack - Shocking Lightning Attack!!][RD/KP02-JP]| RD/KP02-JP | 160002XXX
 2020-08-08 | [Phantom Rage][PHRA-JP]                                           | PHRA-JP | 101102XXX
-2020-08-27 | [Tin of Lost Memories][LOME]                                      | ????-EN | 100268XXX
+2020-08-27 | [Tin of Lost Memories][MP20-EN]                                   | MP20-EN | 100268XXX
 2020-08-29 | [Structure Deck R: Dragunity Drive][SR11-JP]                      | SR11-JP | 100311XXX
 2020-09-04 | [_OCG Structures_ Volume 2 promotional card][YO02-JP]             | YO01-JP | 100269XXX
 2020-09-12 | [Deck Build Pack: Genesis Impactors][DBGI-JP]                     | DBGI-JP | 100415XXX
@@ -117,7 +117,7 @@ Release date | Set | Prefix | Prerelease passcode
 [RD/KP02-JP]: https://yugipedia.com/wiki/Deck_Modification_Pack_-_Shocking_Lightning_Attack!!
 [VP20-JP]: https://yugipedia.com/wiki/Prismatic_Special_Pack
 [PHRA-JP]: https://yugipedia.com/wiki/Phantom_Rage
-[LOME]: https://yugipedia.com/wiki/Tin_of_Lost_Memories
+[MP20-EN]: https://yugipedia.com/wiki/Tin_of_Lost_Memories
 [SR11-JP]: https://yugipedia.com/wiki/Structure_Deck_R:_Dragunity_Drive
 [YO02-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_OCG_Structures_Volume_2_promotional_card
 [DBGI-JP]: https://yugipedia.com/wiki/Deck_Build_Pack:_Genesis_Impactors

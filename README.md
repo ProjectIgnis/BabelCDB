@@ -103,6 +103,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-11-14 | [Deck Modification Pack - Fantastrike Mirage Impact!!][RD/KP03-JP]| RD/KP03-JP | 160003XXX
 2020-11-20 | [Speed Duel Battle City Box][SPDB]                                | ????-EN | 100271XXX
 2020-11-21 | [Structure Deck: Ice Barrier of the Frozen Prison][SD40-JP]       | SD40-JP | 100340XXX
+2020-12-05 | [Selection 10][SL10]                                              | ????-JP | 100272XXX
 
 [RD/ST01-JP]: https://yugipedia.com/wiki/Starter_Deck_Yuga_-_Cut_Through!_Sevens_Road!!
 [RD/ST02-JP]: https://yugipedia.com/wiki/Starter_Deck_Rook_-_Explosive_Supremacy!_Dragears!!
@@ -129,3 +130,4 @@ Release date | Set | Prefix | Prerelease passcode
 [RD/KP03-JP]: https://yugipedia.com/wiki/Deck_Modification_Pack_-_Fantastrike_Mirage_Impact!!
 [SPDB]: https://yugipedia.com/wiki/Speed_Duel_Box
 [SD40-JP]: https://yugipedia.com/wiki/Structure_Deck:_Ice_Barrier_of_the_Frozen_Prison
+[SL10]: https://yugipedia.com/wiki/Selection_10

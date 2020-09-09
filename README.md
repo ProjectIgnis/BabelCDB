@@ -99,7 +99,7 @@ Release date | Set | Prefix | Prerelease passcode
 2020-09-21 | [V Jump Fall 2020 subscription bonus][VJMP9]                      | VJMP-JP1XX | 100200XXX
 2020-10-03 | [World Premiere Pack 2020][WPP1-JP]                               | WPP1-JP | 100270XXX
 2020-10-28 | [_SEVENS Duel-1 Blu-ray_ & DVD promotional card][RD/BD01-JP]      | RD/BD01-JP | 160402XXX
-2020-10-31 | [Blazing Vortex][BLVO]                                            | ????-JP | 101103XXX
+2020-10-31 | [Blazing Vortex][BLVO-JP]                                         | BLVO-JP | 101103XXX
 2020-11-14 | [Deck Modification Pack - Fantastrike Mirage Impact!!][RD/KP03-JP]| RD/KP03-JP | 160003XXX
 2020-11-20 | [Speed Duel Battle City Box][SPDB]                                | ????-EN | 100271XXX
 2020-11-21 | [Structure Deck: Ice Barrier of the Frozen Prison][SD40-JP]       | SD40-JP | 100340XXX
@@ -126,7 +126,7 @@ Release date | Set | Prefix | Prerelease passcode
 [VJMP9]: https://yugipedia.com/wiki/V_Jump_Fall_2020_subscription_bonus
 [WPP1-JP]: https://yugipedia.com/wiki/World_Premiere_Pack_2020
 [RD/BD01-JP]: https://yugipedia.com/wiki/Yu-Gi-Oh!_SEVENS_Duel-1_Blu-ray_%26_DVD_promotional_card
-[BLVO]: https://yugipedia.com/wiki/Blazing_Vortex
+[BLVO-JP]: https://yugipedia.com/wiki/Blazing_Vortex
 [RD/KP03-JP]: https://yugipedia.com/wiki/Deck_Modification_Pack_-_Fantastrike_Mirage_Impact!!
 [SPDB]: https://yugipedia.com/wiki/Speed_Duel_Box
 [SD40-JP]: https://yugipedia.com/wiki/Structure_Deck:_Ice_Barrier_of_the_Frozen_Prison

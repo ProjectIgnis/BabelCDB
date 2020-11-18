@@ -101,9 +101,13 @@ Release date | Set | Prefix | Prerelease passcode
 2020-10-28 | [_SEVENS Duel-1 Blu-ray_ & DVD promotional card][RD/BD01-JP]      | RD/BD01-JP | 160402XXX
 2020-10-31 | [Blazing Vortex][BLVO-JP]                                         | BLVO-JP | 101103XXX
 2020-11-14 | [Deck Modification Pack - Fantastrike Mirage Impact!!][RD/KP03-JP]| RD/KP03-JP | 160003XXX
-2020-11-20 | [Speed Duel Battle City Box][SPDB]                                | ????-EN | 100271XXX
+2020-11-20 | [Speed Duel Battle City Box][SBCB]                                | SBCB-EN | 100271XXX
 2020-11-21 | [Structure Deck: Ice Barrier of the Frozen Prison][SD40-JP]       | SD40-JP | 100340XXX
-2020-12-05 | [Selection 10][SL10]                                              | ????-JP | 100272XXX
+2020-12-05 | [Selection 10][SLT1]                                              | SLT1-JP | 100272XXX
+2020-12-12 | [Maximum Ultra Enhancement Pack][RD/MAX1-JP]                      | RD/MAX1-JP | 160202XXX
+2020-12-16 | [Prismatic God Box][PGB1]                                         | PGB1-JP | 100273XXX
+2021-01-16 | [Lightning Overdrive][LIOV]                                       | LIVO-JP | 101104XXX
+????-??-?? | [Premium Pack 2021] [21PP]                                        | 21PP-JP | 100274XXX
 
 [RD/ST01-JP]: https://yugipedia.com/wiki/Starter_Deck_Yuga_-_Cut_Through!_Sevens_Road!!
 [RD/ST02-JP]: https://yugipedia.com/wiki/Starter_Deck_Rook_-_Explosive_Supremacy!_Dragears!!
@@ -130,4 +134,8 @@ Release date | Set | Prefix | Prerelease passcode
 [RD/KP03-JP]: https://yugipedia.com/wiki/Deck_Modification_Pack_-_Fantastrike_Mirage_Impact!!
 [SPDB]: https://yugipedia.com/wiki/Speed_Duel_Box
 [SD40-JP]: https://yugipedia.com/wiki/Structure_Deck:_Ice_Barrier_of_the_Frozen_Prison
-[SL10]: https://yugipedia.com/wiki/Selection_10
+[SLT1]: https://yugipedia.com/wiki/Selection_10
+[RD/MAX1-JP]: https://yugipedia.com/wiki/Maximum_Ultra_Enhancement_Pack
+[PGB1]: https://yugipedia.com/wiki/Prismatic_God_Box
+[LIOV]: https://yugipedia.com/wiki/Lightning_Overdrive
+[21PP]: https://yugipedia.com/wiki/Premium_Pack_2021

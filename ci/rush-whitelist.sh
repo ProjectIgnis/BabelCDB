@@ -30,5 +30,8 @@ find . -type f -name '*.cdb' -exec sqlite3 {} \
 	"SELECT (datas.id || ' ' || 3 || ' --' || name) FROM datas INNER JOIN texts ON datas.id=texts.id WHERE ot == 0x100|0x200 ORDER BY datas.id" \; \
 	| tee -a $OUTPUT_PRERELEASE
 
-
+echo "# Prereleases" >> $OUTPUT_OFFICIAL
+find . -type f -name '*.cdb' -exec sqlite3 {} \
+    "SELECT (datas.id || ' ' || -1 || ' --' || name) FROM datas INNER JOIN texts ON datas.id=texts.id WHERE ot == 0x100|0x200|0x400 ORDER BY datas.id" \; \
+    | tee -a $OUTPUT_OFFICIAL
 

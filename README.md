@@ -31,7 +31,7 @@ If you are submitting a database for a new unofficial addition, please submit a 
 
 ## GitHub Actions
 
-Responsible for pushing database updates to [the repository the users get updates from]( https://github.com/ProjectIgnis/DeltaHopeHarbinger)
+Responsible for pushing database updates to [the repository the users get updates from]( https://github.com/ProjectIgnis/DeltaUtopia)
 - new CDBs since [the last tag](https://github.com/ProjectIgnis/BabelCDB/tree/20200403) are directly committed
 - delta databases are computed for databases already present and committed
 	- a delta database is a database containing only new or changed rows compared to the previous version

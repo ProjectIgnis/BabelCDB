@@ -78,9 +78,13 @@ if __name__ == '__main__':
 	connection = sqlite3.connect(sys.argv[2])
 	connection.execute(DB_SCHEMA_1)
 	connection.execute(DB_SCHEMA_2)
+	filtered_filenames = []
 	for filename in next(walk(sys.argv[1]), (None, None, []))[2]:
 		if not filename.endswith('.cdb'):
 			continue
+		filtered_filenames.append(filename)
+	filtered_filenames.sort()
+	for filename in filtered_filenames:
 		print(filename)
 		connection.execute(ATTACH_STMT, (filename,))
 		connection.execute(MERGE_DATAS_STMT)

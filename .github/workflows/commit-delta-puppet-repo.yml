@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     if: false
     env:
-      REMOTE: ProjectIgnis/DeltaUtopia.git
-      DESTINATION: DeltaUtopia
-      BASE_SHA: 20201222
+      REMOTE: ProjectIgnis/DeltaPuppetOfStrings.git
+      DESTINATION: DeltaPuppetOfStrings
+      BASE_SHA: 20220911
     steps:
     - uses: actions/checkout@v1
     - name: Install sqlite3

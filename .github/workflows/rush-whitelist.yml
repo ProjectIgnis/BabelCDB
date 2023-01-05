@@ -10,9 +10,9 @@ jobs:
       REMOTE: ProjectIgnis/LFLists.git
       DESTINATION: LFLists
       OUTPUT_OFFICIAL: Rush
-      DATE_OFFICIAL: 2020.04.27
+      DATE_OFFICIAL: 2023.01.01
       OUTPUT_PRERELEASE: Rush-Prerelease
-      DATE_PRERELEASE: 2020.07.02
+      DATE_PRERELEASE: 2023.01.01
     steps:
     - uses: actions/checkout@v1
     - name: Install sqlite3
@@ -26,7 +26,7 @@ jobs:
     - name: Compute whitelists
       run: |
         ./ci/rush-whitelist.sh $HOME/$DESTINATION/$OUTPUT_OFFICIAL $DATE_OFFICIAL \
-          $HOME/$DESTINATION/$OUTPUT_PRERELEASE $DATE_PRERELEASE
+          $HOME/$DESTINATION/$OUTPUT_PRERELEASE $DATE_PRERELEASE ./ci/rush-template.lflist.conf
     - name: Commit and push with original metadata
       run: |
         MESSAGE=$(git log -1 --pretty=%B)

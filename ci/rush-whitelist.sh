@@ -8,6 +8,7 @@ OUTPUT_OFFICIAL=$1.lflist.conf
 DATE_OFFICIAL=$2
 OUTPUT_PRERELEASE=$3.lflist.conf
 DATE_PRERELEASE=$4
+TEMPLATE_BANLIST=$5
 
 function write_header {
 	echo "#[$3 $1]" > $2
@@ -40,4 +41,7 @@ echo "# Prerelease Legends" >> $OUTPUT_PRERELEASE
 find . -type f -name '*.cdb' -exec sqlite3 {} \
     "SELECT (datas.id || ' ' || 3 || ' --' || name) FROM datas INNER JOIN texts ON datas.id=texts.id WHERE ot == 0x100|0x200|0x400 ORDER BY datas.id" \; \
     | tee -a $OUTPUT_PRERELEASE
-
+if [[ -f $TEMPLATE_BANLIST ]]; then
+	cat $TEMPLATE_BANLIST >> $OUTPUT_OFFICIAL
+	cat $TEMPLATE_BANLIST >> $OUTPUT_PRERELEASE
+fi

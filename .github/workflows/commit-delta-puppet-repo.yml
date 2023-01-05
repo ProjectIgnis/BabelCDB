@@ -52,11 +52,12 @@ jobs:
         COMMITTER=$(git log -1 --pretty=format'%cn')
         CEMAIL=$(git log -1 --pretty=format:'%ce')
         cd $HOME/$DESTINATION
-        echo $GITHUB_SHA > VERSION
         git config user.email "$CEMAIL"
         git config user.name "$COMMITTER"
         git add -A .
         if [[ $(git status --porcelain) ]]; then
+          echo $GITHUB_SHA > VERSION
+          git add -A .
           git commit --author="$AUTHOR <$EMAIL>" -m "$MESSAGE"
           git push
         fi

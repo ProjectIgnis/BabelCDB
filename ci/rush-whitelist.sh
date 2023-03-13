@@ -45,3 +45,5 @@ if [[ -f $TEMPLATE_BANLIST ]]; then
 	cat $TEMPLATE_BANLIST >> $OUTPUT_OFFICIAL
 	cat $TEMPLATE_BANLIST >> $OUTPUT_PRERELEASE
 fi
+#Attempt to make the hashes not collide
+echo "1 -1" >> $OUTPUT_PRERELEASE

@@ -41,9 +41,9 @@ echo "# Prerelease Legends" >> $OUTPUT_PRERELEASE
 find . -type f -name '*.cdb' -exec sqlite3 {} \
     "SELECT (datas.id || ' ' || 3 || ' --' || name) FROM datas INNER JOIN texts ON datas.id=texts.id WHERE ot == 0x100|0x200|0x400 ORDER BY datas.id" \; \
     | tee -a $OUTPUT_PRERELEASE
+#Attempt to make the hashes not collide
+echo "1 -1" >> $OUTPUT_PRERELEASE
 if [[ -f $TEMPLATE_BANLIST ]]; then
 	cat $TEMPLATE_BANLIST >> $OUTPUT_OFFICIAL
 	cat $TEMPLATE_BANLIST >> $OUTPUT_PRERELEASE
 fi
-#Attempt to make the hashes not collide
-echo "1 -1" >> $OUTPUT_PRERELEASE

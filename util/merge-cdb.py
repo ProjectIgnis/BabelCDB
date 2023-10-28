@@ -69,7 +69,7 @@ def print_usage():
 	f"""Usage: {sys.argv[0]} [Directory] [Filename]
 	[Directory] => Directory from where to get .cdb files
 	[Filename] => Final filename where all merged databases will be stored.
-	Example: ./"""
+	Example: ./merge-cdb.py .. merged.cdb"""
 	)
 
 def main() -> int:

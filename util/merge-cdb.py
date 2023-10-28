@@ -1,16 +1,14 @@
 #!/bin/env python3
-
-from os import walk
-import sqlite3
-import sys
-
 """
-merge-cdb.py - merge all CDBs together in a directory
+merge-cdb.py
 =====================================================
 
-TODO
-
+Merge all CDBs together in a directory, following the same semantics that
+a client or server would do.
 """
+import os
+import sqlite3
+import sys
 
 # Yoinked from Multirole/YGOPro/CardDatabase.cpp
 DB_SCHEMA_1 = '''
@@ -67,29 +65,55 @@ DETACH toMerge;
 '''
 
 def print_usage():
-	print("Usage: {} [Directory] [Filename]".format(sys.argv[0]))
-	print("[Directory] => Directory relative to working directory from where to get .cdb files")
-	print("[Filename] => Final filename where all merged databases will be stored.")
+	print(
+	f"""Usage: {sys.argv[0]} [Directory] [Filename]
+	[Directory] => Directory from where to get .cdb files
+	[Filename] => Final filename where all merged databases will be stored.
+	Example: ./"""
+	)
 
-if __name__ == '__main__':
+def main() -> int:
 	if len(sys.argv) <= 2:
 		print_usage()
-		sys.exit(1)
-	connection = sqlite3.connect(sys.argv[2])
-	connection.execute(DB_SCHEMA_1)
-	connection.execute(DB_SCHEMA_2)
+		return 1
+
+	db_directory = os.path.abspath(sys.argv[1])
+
 	filtered_filenames = []
-	for filename in next(walk(sys.argv[1]), (None, None, []))[2]:
+	for filename in next(os.walk(db_directory), (None, None, []))[2]:
 		if not filename.endswith('.cdb'):
 			continue
-		filtered_filenames.append(filename)
+		filtered_filenames.append(f"{db_directory}/{filename}")
+
+	if len(filtered_filenames) == 0:
+		print(f"No databases to be merged found in '{db_directory}'", file=sys.stderr)
+		return 2
+
 	filtered_filenames.sort()
+
+	merged_db_filename = os.path.abspath(sys.argv[2])
+	overriden = False
+
+	if os.path.isfile(merged_db_filename):
+		os.remove(merged_db_filename)
+		overriden = True
+
+	print(f"Merging the following into '{merged_db_filename}' {'(Overriden)' if overriden else ''}")
+
+	conn = sqlite3.connect(merged_db_filename)
+	conn.execute(DB_SCHEMA_1)
+	conn.execute(DB_SCHEMA_2)
 	for filename in filtered_filenames:
-		print(filename)
-		connection.execute(ATTACH_STMT, (filename,))
-		connection.execute(MERGE_DATAS_STMT)
-		connection.execute(MERGE_TEXTS_STMT)
-		connection.commit()
-		connection.execute(DETACH_STMT)
-	connection.commit()
-	connection.close()
+		print(f"... '{filename}'")
+		conn.execute(ATTACH_STMT, (filename,))
+		conn.execute(MERGE_DATAS_STMT)
+		conn.execute(MERGE_TEXTS_STMT)
+		conn.commit()
+		conn.execute(DETACH_STMT)
+	conn.commit()
+	conn.close()
+
+	return 0
+
+if __name__ == '__main__':
+	sys.exit(main())

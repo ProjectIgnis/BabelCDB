@@ -10,9 +10,9 @@ jobs:
       REMOTE: ProjectIgnis/LFLists.git
       DESTINATION: LFLists
       OUTPUT_OFFICIAL: Rush
-      DATE_OFFICIAL: 2024.04.01
+      DATE_OFFICIAL: 2024.07.01
       OUTPUT_PRERELEASE: Rush-Prerelease
-      DATE_PRERELEASE: 2024.04.01
+      DATE_PRERELEASE: 2024.07.01
     steps:
     - uses: actions/checkout@v1
     - name: Install sqlite3

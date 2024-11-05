@@ -22,7 +22,7 @@ jobs:
     - name: Clone destination repository
       run: |
         cd $HOME
-        git clone https://${{ secrets.DEPLOY_TOKEN }}@github.com/$REMOTE $DESTINATION
+        git clone https://${{ secrets.DEPLOY_TOKEN_LFLIST }}@github.com/$REMOTE $DESTINATION
     - name: Compute whitelists
       run: |
         ./ci/rush-whitelist.sh $HOME/$DESTINATION/$OUTPUT_OFFICIAL $DATE_OFFICIAL \

@@ -15,10 +15,6 @@ jobs:
       DATE_PRERELEASE: 2026.10.01
     steps:
     - uses: actions/checkout@v1
-    - name: Install sqlite3
-      run: |
-        sudo apt update
-        sudo apt install -y sqlite3
     - name: Clone destination repository
       run: |
         cd $HOME
@@ -40,5 +36,5 @@ jobs:
         git add -A .
         if [[ $(git status --porcelain) ]]; then
           git commit --author="$AUTHOR <$EMAIL>" -m "Rush whitelist: $MESSAGE" -m "$GITHUB_REPOSITORY@$GITHUB_SHA"
-          git push
+          docker run -t --rm -v $(pwd):/git --entrypoint '/bin/sh' alpine/git -c 'git config --global --add safe.directory /git && git push'
         fi

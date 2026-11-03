@@ -55,5 +55,5 @@ jobs:
           echo $GITHUB_SHA > VERSION
           git add -A .
           git commit --author="$AUTHOR <$EMAIL>" -m "$MESSAGE"
-          docker run -t --rm -v $(pwd):/git --entrypoint '/bin/sh' alpine/git -c 'git config --global --add safe.directory /git && git push'
+          docker run -t --rm -v $(pwd):/git --entrypoint '/bin/sh' alpine/git:2.52.0 -c 'git config --global --add safe.directory /git && git push'
         fi
